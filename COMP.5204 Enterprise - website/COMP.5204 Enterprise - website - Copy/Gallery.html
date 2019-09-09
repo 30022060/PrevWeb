@@ -1,0 +1,166 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet">
+<title>Kiwi Tourism</title> 
+</head>   
+<body>
+
+<div class="header">
+ <h1>Kiwi Tourism</h1>
+</div>
+    
+</body>    
+    
+
+<header>
+<div class="links">
+<ul class="main-nav">
+
+<li><a href="index.html"> HOME </a></li>
+<li><a href="About.html"> ABOUT </a></li>
+<li><a href="Attractions.html"> ATTRACTIONS </a></li>
+<li><a href="Videos.html"> VIDEOS </a></li>
+<li><a href="Gallery.html"> GALLERY </a></li>
+<li><a href="Places_to_visit.html"> PLACES TO VISIT </a></li>
+<li><a href="Reference.html"> REFFERENCE </a></li>
+
+
+</ul>
+</div>    
+</header>
+<div class="logo">
+<img src="images/Kiwi_tourism_logo.jpg">
+</div>
+ <div class="content">
+<div class="subcontent">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br>
+
+ </div>
+</div>    
+    
+<body>
+<div class="gallery">
+<h2>New Zealand Photo Gallery</h2>    
+</div>
+
+<div class="slideshow-container">
+
+<div class="Slides">
+  <div class="numbertext">1 / 10</div>
+  <img src="images/new-zealand-south-island-queenstown.jpg" style="width:900px">
+  <div class="text">Queenstown</div>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">2 / 10</div>
+  <img src="images/new-zealand-north-island-rotorua.jpg" style="width:900px">
+  <div class="text">Rotorua</div>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">3 / 10</div>
+  <img src="images/new-zealand-north-island-coromandel-peninsula.jpg" style="width:900px">
+  <div class="text">Coromandel Peninsula</div>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">4 / 10</div>
+  <img src="images/sky_tower.jpg" style="width:900px">
+  <div class="text">Sky Tower</div>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">5 / 10</div>
+  <img src="images/lake_taupo.jpg" style="width:900px">
+  <div class="text">Lake Taupo</div>
+</div>
+    
+<div class="Slides">
+  <div class="numbertext">6 / 10</div>
+  <img src="images/hobbiton_movie_set.jpg" style="width:900px">
+  <div class="text">Hobbiton Movie Set</div>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">7 / 10</div>
+  <img src="images/waitomo_caves.jpg" style="width:900px">
+  <div class="text">Waitomo Caves</div>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">8 / 10</div>
+  <img src="images/Tongariro-Crossing-Emerald-Lakes.jpg" style="width:900px">
+  <div class="text">Tongariro Crossing</div>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">9 / 10</div>
+  <img src="images/Bay-of-Islands-Aerial-640px.jpg" style="width:900px">
+  <div class="text">Bay of Islands</div>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">10 / 10</div>
+  <img src="images/26513395128_ce6b150d27_h.jpg" style="width:900px ">
+  <div class="text">Waiheke Island</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+    
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("Slides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+    
+
+<body>
+<div class="footer5">©2019 Liam Sullivan<br>Student ID: 30022060</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet">
+<title>Kiwi Tourism</title> 
+</head>   
+<body>
+
+
+
+<div class="header">
+ <h1>Kiwi Tourism</h1>
+</div>
+    
+</body>    
+    
+<header>
+<div class="links">
+<ul class="main-nav">
+
+<li><a href="index.html"> HOME </a></li>
+<li><a href="About.html"> ABOUT </a></li>
+<li><a href="Attractions.html"> ATTRACTIONS </a></li>
+<li><a href="Videos.html"> VIDEOS </a></li>
+<li><a href="Gallery.html"> GALLERY </a></li>
+<li><a href="Places_to_visit.html"> PLACES TO VISIT </a></li>
+<li><a href="Reference.html"> REFFERENCE </a></li>
+
+</ul>
+</div>    
+</header>
+<div class="logo">
+<img src="images/Kiwi_tourism_logo.jpg">
+</div>
+<div class="content">
+<div class="subcontent">
+<br><br><br><br>This page is dedicated to various tourist attractions<br>in New Zealand.<br><br>Below is a slideshow of various tourist attractions with brief descriptions about them.<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</div> 
+
+<div class="about_title">
+<h2>About Tourism in New Zealand</h2>
+</div>
+
+<div class="about_slides">
+
+<div class="Slides">
+  <div class="numbertext">1 / 6</div>
+  <img src="images/hobbiton_movie_set.jpg" style="width:900px">
+  <div class="about_text">Hobbiton Movie Set</div>
+  <p>The Hobbiton Movie Set is located in Matamata.<br>It is where the famous film trilogy 'The Lord of the Rings was filmed.
+    <br>Tours of the movie set are available to be booked online.</p>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">2 / 6</div>
+  <img src="images/waitomo-glowworm-caves.jpg" style="width:900px">
+  <div class="about_text">Waitomo Glowworm Caves</div>
+    <p>The Waitomo Glowworm Caves is a cave located in Waitomo.<br>It is popular for the Arachnocampa luminosa, an exclusive glowworm species in New Zealand.<br>Tours are available through the waitomo caves.</p>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">3 / 6</div>
+  <img src="images/sky_tower.jpg" style="width:900px">
+  <div class="about_text">Sky Tower</div>
+    <p>The Sky Tower is located in Auckland, the largest city in New Zealand.<br>It stands at 328 metres tall and gives off a view up to 80 kilometres.<br>There is also the Orbit 360°, a revolving restauraunt.</p>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">4 / 6</div>
+  <img src="images/mt-ruapehu-snow-SUPPLIED-1120.jpg" style="width:900px">
+  <div class="about_text">Mount Ruapehu</div>
+    <p>Mount Ruapehu is the largest active volcano in New Zealand<br>and has the highest point in the North Island.<br>Skiing and snowboarding is available in Ruapehu's skiing areas, Whakapapa and Turoa.
+     </p>
+</div>
+
+<div class="Slides">
+  <div class="numbertext">5 / 6</div>
+  <img src="images/the-museum-of-new-zealand-te-papa.jpg" style="width:900px">
+  <div class="about_text">Museum of New Zealand Te Papa Tongarewa</div>
+    <p>The Museum of New Zealand Te Papa Tongarewa is located in Wellington.<br>It has many exhibits on display such as The Gallipoli Campaign in great detail.<br>There is no fee to enter the mueseum.</p>
+</div>
+    
+<div class="Slides">
+  <div class="numbertext">6 / 6</div>
+  <img src="images/lake_taupo.jpg" style="width:900px">
+  <div class="about_text">Lake Taupo</div>
+    <p>Lake Taupo is the largest lake by surface area in New Zealand.<br>It is well known for its quality of fish.<br>There are various activites to do such as bungy diving and fishing.</p>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+    
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("Slides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<body>
+<div class="footer2">©2019 Liam Sullivan<br>Student ID: 30022060</div>
+</body>
+</html>
